@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminStudentAttendanceActivity">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/app_color_dark"
+
+
+                android:text="Name *"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:background="@drawable/textfield_bg"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10dp"
+
+                >
+
+                <EditText
+                    android:id="@+id/name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Enter Student name"
+                    android:textColorHint="#BFBFBF"
+                    android:inputType="text"
+                    android:padding="@dimen/_10dp"
+                    android:textColor="@color/app_color_medium"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20dp"
+
+            >
+
+            <TextView
+                android:id="@+id/user_id_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/app_color_dark"
+
+
+                android:text="User Id * (Copy it from student profile Screen)"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:background="@drawable/textfield_bg"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10dp"
+
+                >
+
+                <EditText
+                    android:id="@+id/user_id_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Enter student User id"
+                    android:textColorHint="#BFBFBF"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_10dp"
+                    android:textColor="@color/app_color_medium"
+                    />
+
+
+            </LinearLayout>
+
+             <!--course-->
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginTop="@dimen/_20dp"
+
+                 >
+
+                 <TextView
+                     android:id="@+id/course_tv"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/_16sp"
+                     android:layout_gravity="center"
+                     android:textColor="@color/app_color_dark"
+
+
+                     android:text="Course"/>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="@dimen/_10dp"
+                     android:layout_marginLeft="@dimen/_10dp"
+                     android:background="@drawable/textfield_bg"
+                     android:orientation="vertical"
+                     android:layout_gravity="center"
+                     android:layout_marginTop="@dimen/_10dp"
+
+                     >
+
+                     <EditText
+                         android:id="@+id/course_et"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:backgroundTint="@android:color/transparent"
+                         android:hint="Enter student course"
+                         android:textColorHint="#BFBFBF"
+                         android:inputType="textEmailAddress"
+                         android:padding="@dimen/_10dp"
+                         android:textColor="@color/app_color_medium"
+                         />
+
+
+                 </LinearLayout>
+
+
+             </LinearLayout>
+
+             <!--batch-->
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginTop="@dimen/_20dp"
+
+                 >
+
+                 <TextView
+                     android:id="@+id/batch_tv"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/_16sp"
+                     android:layout_gravity="center"
+                     android:textColor="@color/app_color_dark"
+
+
+                     android:text="Batch"/>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="@dimen/_10dp"
+                     android:layout_marginLeft="@dimen/_10dp"
+                     android:background="@drawable/textfield_bg"
+                     android:orientation="vertical"
+                     android:layout_gravity="center"
+                     android:layout_marginTop="@dimen/_10dp"
+
+                     >
+
+                     <EditText
+                         android:id="@+id/batch_et"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:backgroundTint="@android:color/transparent"
+                         android:hint="Enter student batch"
+                         android:textColorHint="#BFBFBF"
+                         android:inputType="textEmailAddress"
+                         android:padding="@dimen/_10dp"
+                         android:textColor="@color/app_color_medium"
+                         />
+
+
+                 </LinearLayout>
+
+
+             </LinearLayout>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absent/Present"
+                android:layout_margin="@dimen/_10dp"
+                android:checked="true"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/att_switch_"/>
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/atten_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Mark Attendance"
+            android:background="@drawable/solid_bg_app_color_round_corner"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/yest_atten_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="copy Attendance"
+            android:background="@drawable/solid_bg_app_color_round_corner"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

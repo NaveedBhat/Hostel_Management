@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AddMessActivity">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mess_btn"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_16sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/app_color_dark"
+
+
+                    android:text="Day"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:background="@drawable/textfield_bg"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/title_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="Enter Day eg Monday/Tuesday"
+                        android:textColorHint="#BFBFBF"
+                        android:inputType="text"
+                        android:padding="@dimen/_10dp"
+                        android:textColor="@color/app_color_medium"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_16sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/app_color_dark"
+
+
+                    android:text="Lunch Description"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:background="@drawable/textfield_bg"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/lunch_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="Enter Lunch description"
+                        android:textColorHint="#BFBFBF"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/_10dp"
+                        android:textColor="@color/app_color_medium"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Dinner-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_16sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/app_color_dark"
+
+
+                    android:text="Dinner Description"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:background="@drawable/textfield_bg"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/dinner_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="Enter Dinner description"
+                        android:textColorHint="#BFBFBF"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/_10dp"
+                        android:textColor="@color/app_color_medium"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_mess_btn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Add Mess Schedule"
+                android:background="@drawable/solid_bg_app_color_round_corner"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:textAllCaps="false"
+                />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mess_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="View Mess Schedule"
+        android:background="@drawable/solid_bg_app_color_round_corner"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

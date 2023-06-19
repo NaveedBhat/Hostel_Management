@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.ScannerActivity">
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        android:orientation="vertical"
+        >
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absent/Present"
+             android:layout_margin="@dimen/_10dp"
+            android:checked="true"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/att_switch_"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_app_color_round_corner"
+            android:text="Scan"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10dp"
+             android:id="@+id/scan_btn"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            />
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/app_color_medium"
+            android:text=""/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mark_atten_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Attendance By Admin"
+            android:background="@drawable/solid_bg_app_color_round_corner"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

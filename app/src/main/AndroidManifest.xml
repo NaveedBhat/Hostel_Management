@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NcHostel"
+        tools:targetApi="31">
+        <activity
+            android:name=".student.ImageZoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.EmergencyContatcsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ViewAttendanceRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.RequestAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.ViewNoticeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddNoticeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.MessScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddMessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ViewAttendanceDayDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ViewAttendanceDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.AttendanceHistoryDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ViewAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminStudentAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.AttendanceHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.QRCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ComplaintDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ViewComplaintsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.MyComplaintsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.RaiseComplaintsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ProfileDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.StudentDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ViewStudentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddStudentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

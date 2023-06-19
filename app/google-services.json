@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "615147174430",
+    "project_id": "nchostel-604bc",
+    "storage_bucket": "nchostel-604bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615147174430:android:10fbd1a87ffc570d0f4c0f",
+        "android_client_info": {
+          "package_name": "com.app.nchostel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615147174430-0cma9fctf6oanideur7vhhhllte119d2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi6LyBwNhuxUG_eD3Yr1M7ZjUPNy0UkBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615147174430-0cma9fctf6oanideur7vhhhllte119d2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
